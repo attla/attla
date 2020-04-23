@@ -2,13 +2,13 @@
 
 > :v: A small PHP framework for web developers
 
-# Documentation
+## Documentation
 
 Documentação em português [https://attla.github.io/](https://attla.github.io/)
 
 Documentation in english [https://attla.github.io/#/en/](https://attla.github.io/#/en/)
 
-# Installation
+## Installation
 
 Use Composer to manage all dependencies
 
