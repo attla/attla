@@ -1,0 +1,42 @@
+{
+	"name": "Attla",
+	"year": 2020,
+	"version": "1.0",
+	"debug": true,
+	"db" : {
+		"driver": "mysql",
+		"host": "localhost",
+		"port": "3306",
+		"database": "attla",
+		"username": "root",
+		"password": ""
+	},
+	"prefix": "__",
+	"cache": false,
+	"cache_time": 7200,
+	"filter_inputs": true,
+	"locale": ["pt_BR", "pt_BR.utf-8", "pt_BR.utf-8", "portuguese"],
+	"default_timezone": "America/Sao_Paulo",
+	"encrypt_key": "より古いバージョンから対応しているようなので を使う 未知の形式",
+	"encrypt_replacement": "pHt1r5j0sCe34NDzqQOV8kBKG9XmwvfiAIdLZ2aRlxSYcuPWnybUgETJ6MhFo7.-",
+	"routes":{
+		"index": "welcome",
+		"auth_login": "login",
+		"auth_not_logged": "/",
+		"exclude_routes":[
+			"error",
+			"header",
+			"footer"
+		],
+
+		"GLOBALS":{
+			
+		},
+		"GET":{
+			
+		},
+		"POST":{
+			
+		}
+	}
+}

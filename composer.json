@@ -1,0 +1,36 @@
+{
+    "name": "attla/attla",
+    "type": "project",
+    "description": "The Attla Framework.",
+    "keywords": [
+        "framework",
+        "attla"
+    ],
+	"homepage": "http://www.attla.com.br",
+    "license": "MIT",
+	"authors": [
+        {
+            "name": "Lucas Nicolau",
+            "email": "fedhrm@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "phpmailer/phpmailer": "6.1.*",
+        "illuminate/view": "^5.5|^6.0|^7.0",
+        "symfony/var-dumper": "^3.2"
+    },
+    "autoload": {
+		"files": [
+            "core/Helpers/functions.php"
+        ],
+        "psr-4": {
+            "Attla\\": "core/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+	"minimum-stability": "dev",
+    "prefer-stable": true
+}
