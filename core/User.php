@@ -97,7 +97,7 @@ class User extends Encrypt
 		}else{
 			$cookie = isset($_COOKIE[self::cookie_name()]) ? $_COOKIE[self::cookie_name()] : false;
 			self::$data = parent::is_jwt($cookie);
-			if($cookie && !self::$data) self::logout();
+			if($cookie && !self::$data) self::logout(false);
 			return self::$data;
 		}
 	}
