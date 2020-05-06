@@ -78,7 +78,7 @@ class CSRF
 		}
 		$r = (!isset($_SERVER['HTTP_REFERER']) || strpos($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST']) < 0  || preg_match("/curl|libcurl/",$_SERVER['HTTP_USER_AGENT']) || !isset($_POST[self::name()], $_COOKIE[self::name()]) || $_POST[self::name()] != $_COOKIE[self::name()] || !Encrypt::hash_equals(self::path($new), $_POST[self::name()])) ? false : true;
 		unset($_POST[self::name()], $_COOKIE[self::name()]);
-		self::set_csrf($new ? $new : 1);
+		self::set_csrf($new ? $new : '');
 		return $r;
 	}
 
