@@ -19,13 +19,9 @@
 	],
 	"require": {
 		"php": ">=7.3",
-		"attla/core": "dev-main",
-		"attla/package-test": "dev-main",
-		"attla/permission": "dev-main"
+		"attla/core": "dev-main"
 	},
-	"require-dev": {
-		"attla/debugbar": "^1.0"
-	},
+	"require-dev": {},
 	"autoload": {
 		"psr-4": {
 			"App\\": "app/",
