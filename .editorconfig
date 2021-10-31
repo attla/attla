@@ -1,0 +1,25 @@
+root = true
+
+[*]
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.blade.php]
+insert_final_newline = false
+
+[{*.php,composer.json,*.md}]
+indent_style = space
+indent_size = 4
+
+[{*.html,*.less,*.sass,*.css,*.js,*.json}]
+indent_style = tab
+indent_size = 4
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.yml]
+indent_style = space
+indent_size = 2

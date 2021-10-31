@@ -1,0 +1,35 @@
+{
+	"name": "Attla",
+	"year": 2020,
+	"debug": true,
+	"db": {
+		"driver": "mysql",
+		"host": "localhost",
+		"port": "3306",
+		"database": "attla",
+		"username": "root",
+		"password": "",
+		"charset": "utf8mb4",
+		"collation": "utf8mb4_general_ci",
+		"engine": "InnoDB"
+	},
+	"timezone": "America/Bahia",
+	"locale": "pt_BR",
+	"minify": true,
+	"encrypt": {
+		"mode": "query",
+		"secret": ""
+	},
+	"lang": "pt_BR",
+	"pagination": "bootstrap",
+	"server": {
+		"host": "127.0.0.1",
+		"port": 8080
+	},
+	"mail": {
+		"driver": "smtp",
+		"host": "smtp.gmail.com",
+		"port": "587",
+		"from": ""
+	}
+}
