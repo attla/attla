@@ -1,1 +1,0 @@
-<?=err('Welcome!','Attla framework successfully installed.<br>Check the <a href="https://attla.github.io/" target="_blank">documentation</a> or <a href="https://github.com/attla/attla" target="_blank">Github repository</a>.')?>
