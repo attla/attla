@@ -2,10 +2,10 @@
 
 namespace App\Models;
 
-use Attla\Database\Eloquent;
+use Attla\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class User extends Eloquent
+class User extends Authenticatable
 {
     use HasFactory;
 
