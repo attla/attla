@@ -32,10 +32,11 @@ class Kernel extends HttpKernel
             \Attla\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
         'api' => [
-            //
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
     ];
 
