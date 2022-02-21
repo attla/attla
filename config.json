@@ -20,7 +20,6 @@
 		"mode": "query",
 		"secret": ""
 	},
-	"lang": "pt_BR",
 	"pagination": "bootstrap",
 	"server": {
 		"host": "127.0.0.1",
