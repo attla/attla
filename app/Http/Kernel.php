@@ -27,7 +27,7 @@ class Kernel extends HttpKernel
      */
     public $middlewareGroups = [
         'web' => [
-            \Attla\Middleware\SetTokens::class,
+            \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Attla\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,

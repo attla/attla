@@ -16,6 +16,7 @@
 	"timezone": "America/Bahia",
 	"locale": "pt_BR",
 	"minify": true,
+	"prefix": "",
 	"encrypt": {
 		"mode": "query",
 		"secret": ""
