@@ -14,7 +14,7 @@
 		"engine": "InnoDB"
 	},
 	"timezone": "America/Bahia",
-	"locale": "pt_BR",
+	"locale": "pt-BR",
 	"minify": true,
 	"prefix": "",
 	"encrypt": {
