@@ -27,9 +27,15 @@
 		"port": 8080
 	},
 	"mail": {
-		"driver": "smtp",
+		"mailer": "smtp",
 		"host": "smtp.gmail.com",
 		"port": "587",
-		"from": ""
+		"username": "",
+		"password": "",
+		"encryption": "tls",
+		"from": {
+			"address": "hello@example.com",
+			"name": "Example"
+		}
 	}
 }
