@@ -14,6 +14,7 @@ class Kernel extends HttpKernel
      * @var string[]
      */
     public $middleware = [
+        \Attla\Middleware\Cors::class,
         \Attla\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \App\Http\Middleware\ConvertEmptyStringsToNull::class,
