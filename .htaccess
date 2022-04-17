@@ -64,6 +64,10 @@ Options -Indexes
 	RewriteCond %{REQUEST_URI} (.+)/$
 	RewriteRule ^ %1 [L,R=301]
 
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
 	# Access to assets from root to public folder
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_URI} ^.*\.(x?html|css|js|png|jpe?g|svg|json|xml|gif|swf|eot|woff2?|ttf|otf|pdf) [NC]
