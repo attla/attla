@@ -1,7 +1,5 @@
 <?php
 
-$config = config();
-
 return [
 
     /*
@@ -15,7 +13,7 @@ return [
     |
     */
 
-    'default' => $config->get('mail.mailer', 'smtp'),
+    'default' => env('MAIL_MAILER', 'smtp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -26,7 +24,7 @@ return [
     | their respective settings. Several examples have been configured for
     | you and you are free to add your own as your application requires.
     |
-    | Laravel supports a variety of mail "transport" drivers to be used while
+    | Attla supports a variety of mail "transport" drivers to be used while
     | sending an e-mail. You will specify which one you are using for your
     | mailers below. You are free to add additional mailers as required.
     |
@@ -38,12 +36,13 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => $config->get('mail.host', 'smtp.gmail.com'),
-            'port' => $config->get('mail.port', 587),
-            'encryption' => $config->get('mail.encryption', 'tls'),
-            'username' => $config->get('mail.username'),
-            'password' => $config->get('mail.password'),
+            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+            'port' => env('MAIL_PORT', 587),
+            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+            'username' => env('MAIL_USERNAME'),
+            'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
+            'local_domain' => env('MAIL_EHLO_DOMAIN'),
         ],
 
         'ses' => [
@@ -60,12 +59,12 @@ return [
 
         'sendmail' => [
             'transport' => 'sendmail',
-            'path' => $config->get('mail.sendmail.path', '/usr/sbin/sendmail -bs -i'),
+            'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -bs -i'),
         ],
 
         'log' => [
             'transport' => 'log',
-            'channel' => $config->get('mail.log.channel'),
+            'channel' => env('MAIL_LOG_CHANNEL'),
         ],
 
         'array' => [
@@ -93,8 +92,8 @@ return [
     */
 
     'from' => [
-        'address' => $config->get('mail.from.address', 'hello@example.com'),
-        'name' => $config->get('mail.from.name', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
     /*
@@ -104,7 +103,7 @@ return [
     |
     | If you are using Markdown based email rendering, you may configure your
     | theme and component paths here, allowing you to customize the design
-    | of the emails. Or, you may simply stick with the Laravel defaults!
+    | of the emails. Or, you may simply stick with the Attla defaults!
     |
     */
 
